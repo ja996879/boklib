@@ -1,0 +1,9 @@
+﻿<h1>welcome my library<h1>
+<%=notice%>
+<%=session[:current]%>
+<%= form_tag '/login/login' , method: :post %>
+<%=text_field_tag 'account'%>
+<p></p>
+<%=password_field_tag 'password'%>
+<%=submit_tag 'login'%>
+<%=link_to '註冊' , new_user_path%>
